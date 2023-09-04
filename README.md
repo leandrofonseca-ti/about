@@ -4,7 +4,7 @@
 <br/> 
   Aqui você vai encontrar alguns projetos pequenos e exemplos de soluções e tecnologias. 
 <br/> 
-Fique a vontade para dar novas ideias e dicas para os códigos !!
+Fique a vontade para contribuir com novas ideias e dicas para os códigos !!
 
 </p>
 
