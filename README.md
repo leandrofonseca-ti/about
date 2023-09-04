@@ -23,7 +23,13 @@ Fique a vontade para contribuir com novas ideias e dicas para os códigos !!
 </p>
 
 
+  ![Stars](https://github-readme-stats.vercel.app/api?username=leandrofonseca-ti&show_icons=true&locale=en&count_private=true&hide_rank=true&custom_title=My%20GitHub%20Stats&disable_animations=false&theme=tokyonight)
+  ![Leandro Fonseca](https://github-readme-streak-stats.herokuapp.com/?user=leandrofonseca-ti&theme=tokyonight) 
+  
+   
+<br>
 
+ 
 
 <!--
 
