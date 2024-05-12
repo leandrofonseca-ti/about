@@ -1,6 +1,6 @@
 ## Seja bem vindo(a), sou o Leandro Fonseca!
 
-<p> Sou desenvolvedor back-end na OLX Brasil e a principal tecnologia que atuo é C#!
+<p> Sou desenvolvedor back-end e mobile. Minha principal tecnologia que atuo é C#!
 <br/> 
   Aqui você vai encontrar alguns projetos pequenos e exemplos de soluções e tecnologias. 
 <br/> 
