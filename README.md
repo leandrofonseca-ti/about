@@ -1,3 +1,4 @@
+<!--
 ## Seja bem vindo(a), sou o Leandro Fonseca!
 
 <p> Sou desenvolvedor back-end e mobile. Minha principal tecnologia que atuo é C#!
@@ -7,7 +8,16 @@
 Fique a vontade para contribuir com novas ideias e dicas para os códigos !!
 
 </p>
+-->
 
+## Welcome, I´m Leandro Fonseca!
+
+<p> I'm a back-end and mobile developer. My main technology that I work with is C#!
+<br/> 
+Here you will find some small projects and examples of solutions and technologies.
+  <br/> 
+Feel free to contribute new ideas and tips for the codes!!
+</p>
 <hr>
 
 <p align="left">
