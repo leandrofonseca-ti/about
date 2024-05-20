@@ -1,0 +1,31 @@
+on: 
+#  push:
+#    branches:
+#      - main
+  workflow_dispatch:
+name: Deploy Web - leandroti.com
+
+env:
+  SERVER_PATH: "./httpdocs/"
+  GITHUB_PATH: "./leandroti/"
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+#      - name: 🚚 Setup .NET
+#        uses: actions/setup-dotnet@v4
+#        with:
+#          dotnet-version: 8.0.x
+      # Here is the deployment action
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ${{ env.GITHUB_PATH }}
+          server-dir: ${{ env.SERVER_PATH }}
