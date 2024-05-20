@@ -11,17 +11,23 @@ env:
 jobs:
   web-deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     environment: production
     steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v4
+      - name: 1 🚚 Get latest code
+        uses: actions/checkout@v2
+#      - name: 2 🚚 Setup MSBuild
+#        uses: microsoft/setup-msbuild@v1.1
+#      - name: 3 🚚 Setup NuGet
+#        uses: NuGet/setup-nuget@v1.0.5
+      - name: 2 🚚 Setup Chrome
+        uses: browser-actions/setup-chrome@v0.0.0
 #      - name: 🚚 Setup .NET
 #        uses: actions/setup-dotnet@v4
 #        with:
 #          dotnet-version: 8.0.x
       # Here is the deployment action
-      - name: 📂 Sync files
+      - name: 3 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_HOST }}
@@ -29,3 +35,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ${{ env.GITHUB_PATH }}
           server-dir: ${{ env.SERVER_PATH }}
+          delete: true
